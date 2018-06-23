@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>POWERRRRR</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+		<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 50%;
+			padding: 10px;
+			height: 100%; /* Should be removed. Only for demonstration */
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		</style>
+		<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css" type="text/css" />
+        
+		<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js"></script>
+		<script type="text/javascript"> Bokeh.set_log_level("info"); </script>
+	</head>
+	<body>
+
+		<h2>Two Equal Columns</h2>
+
+		<div class="row">
+			<div class="column" style="background-color:#aaa;">
+				<div class="plot">
+				<div class="bk-root">
+            <div class="bk-plotdiv" id="511cfd37-e688-45c1-ae1e-8b16c34e74f2"></div>
+        </div>
+        
+        <script type="application/json" id="155d6672-340e-4cc3-8b6c-973dc9645130">
+          {"e132085f-350d-4283-9393-7a62afa5ad26":{"roots":{"references":[{"attributes":{},"id":"0c00fb1f-7339-45c8-b3f5-c72df73b1213","type":"BasicTickFormatter"},{"attributes":{},"id":"87c72375-e660-42c7-ba21-56747411f5e6","type":"LinearScale"},{"attributes":{},"id":"efd02e59-fb7a-4380-8ab0-8b0bee389c0a","type":"UnionRenderers"},{"attributes":{},"id":"69e95bd2-8882-4954-8ef4-2acbdc970b2f","type":"BasicTickFormatter"},{"attributes":{"items":[{"id":"c8477852-c055-4dcb-a3a9-32ea41de7e8c","type":"LegendItem"},{"id":"7a5b712c-129c-4bd8-a031-6b0221de5005","type":"LegendItem"}],"location":"bottom_left","plot":{"id":"4959cd6a-59f7-46de-af51-34043b6e0451","subtype":"Figure","type":"Plot"}},"id":"8f6341c8-435a-40c1-91d3-1aac4ef78b36","type":"Legend"},{"attributes":{},"id":"2d4fdeae-0b74-4099-ac09-0042ee95da02","type":"BasicTicker"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"a12d9968-89dd-4bed-af8a-63a872172abb","type":"GlyphRenderer"}],"tooltips":[["Stroomprijs","@y"]]},"id":"aa9f6bb3-bf07-42b7-931f-3c82bad8edff","type":"HoverTool"},{"attributes":{"label":{"value":"Gasprijzen"},"renderers":[{"id":"9d96f368-66dd-4210-85df-ac892f95ecbc","type":"GlyphRenderer"}]},"id":"7a5b712c-129c-4bd8-a031-6b0221de5005","type":"LegendItem"},{"attributes":{},"id":"084273cc-5d8c-4e00-8963-c29051ee94f6","type":"BasicTickFormatter"},{"attributes":{"formatter":{"id":"084273cc-5d8c-4e00-8963-c29051ee94f6","type":"BasicTickFormatter"},"plot":{"id":"4959cd6a-59f7-46de-af51-34043b6e0451","subtype":"Figure","type":"Plot"},"ticker":{"id":"2d4fdeae-0b74-4099-ac09-0042ee95da02","type":"BasicTicker"}},"id":"a05bb7bf-c6ca-4714-a913-6c8ebd0d5b43","type":"LinearAxis"},{"attributes":{"line_color":"blue","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"b82539be-b8b3-4eae-a1e5-b3c450c84aa4","type":"Line"},{"attributes":{"axis_label":"Elektriciteitsprijzen (euro/kWh)","formatter":{"id":"0c00fb1f-7339-45c8-b3f5-c72df73b1213","type":"BasicTickFormatter"},"plot":{"id":"4959cd6a-59f7-46de-af51-34043b6e0451","subtype":"Figure","type":"Plot"},"ticker":{"id":"a5cf8781-c1b0-4f1b-9360-886163ecb326","type":"BasicTicker"}},"id":"492b25b6-6b5d-4879-b8ae-0a8eade5de2b","type":"LinearAxis"},{"attributes":{"callback":null,"end":12500,"start":8600},"id":"4003c652-071f-4156-9efb-612d189b3ca1","type":"Range1d"},{"attributes":{"axis_label":"Gasprijzen(euro/GJ)","formatter":{"id":"69e95bd2-8882-4954-8ef4-2acbdc970b2f","type":"BasicTickFormatter"},"plot":{"id":"4959cd6a-59f7-46de-af51-34043b6e0451","subtype":"Figure","type":"Plot"},"ticker":{"id":"08115c7e-f894-48ab-99f0-49eeb7b698bd","type":"BasicTicker"},"y_range_name":"foo"},"id":"8187e648-ba8f-4ea7-9fac-64fb8457ec4b","type":"LinearAxis"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y2"}},"id":"f53868a1-86eb-461c-a717-e5f76dcdc304","type":"Line"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"e54fffb5-9985-41ed-954d-13812ba7bafe","type":"Line"},{"attributes":{"label":{"value":"Elektriciteitsprijzen"},"renderers":[{"id":"a12d9968-89dd-4bed-af8a-63a872172abb","type":"GlyphRenderer"}]},"id":"c8477852-c055-4dcb-a3a9-32ea41de7e8c","type":"LegendItem"},{"attributes":{"plot":{"id":"4959cd6a-59f7-46de-af51-34043b6e0451","subtype":"Figure","type":"Plot"},"ticker":{"id":"2d4fdeae-0b74-4099-ac09-0042ee95da02","type":"BasicTicker"}},"id":"2817420f-0a1a-46cf-956e-40c125626341","type":"Grid"},{"attributes":{"callback":null,"end":137,"start":100},"id":"8293eecb-361a-4eb9-91a0-7252558b0036","type":"Range1d"},{"attributes":{},"id":"27933800-74c7-4c2a-b43c-659cc9a7326a","type":"Selection"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"aa9f6bb3-bf07-42b7-931f-3c82bad8edff","type":"HoverTool"},{"id":"6a284771-bf95-40cd-97c4-3504a30d0a2c","type":"HoverTool"}]},"id":"cbcc7e38-34ae-486c-9557-bd2feda506fe","type":"Toolbar"},{"attributes":{"line_color":"olive","line_width":3,"x":{"field":"x"},"y":{"field":"y2"}},"id":"9382c350-215e-4b82-b932-ce2312c2cabe","type":"Line"},{"attributes":{},"id":"a5cf8781-c1b0-4f1b-9360-886163ecb326","type":"BasicTicker"},{"attributes":{"source":{"id":"606a1557-e743-4d39-8b0b-b16220b227a6","type":"ColumnDataSource"}},"id":"0e11b89b-9b5c-4013-9a97-0b4c94b977ca","type":"CDSView"},{"attributes":{"callback":null},"id":"4f2cd847-29c4-4cfe-b54d-e9627dceb5a3","type":"DataRange1d"},{"attributes":{"data_source":{"id":"606a1557-e743-4d39-8b0b-b16220b227a6","type":"ColumnDataSource"},"glyph":{"id":"9382c350-215e-4b82-b932-ce2312c2cabe","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"f53868a1-86eb-461c-a717-e5f76dcdc304","type":"Line"},"selection_glyph":null,"view":{"id":"0e11b89b-9b5c-4013-9a97-0b4c94b977ca","type":"CDSView"},"y_range_name":"foo"},"id":"9d96f368-66dd-4210-85df-ac892f95ecbc","type":"GlyphRenderer"},{"attributes":{"callback":null,"data":{"x":[2011,2012,2013,2014,2015,2016,2017],"y":[125,128,127,128,121,115,109],"y2":[10353,11706,12068,11635,10949,9654,9016]},"selected":{"id":"27933800-74c7-4c2a-b43c-659cc9a7326a","type":"Selection"},"selection_policy":{"id":"efd02e59-fb7a-4380-8ab0-8b0bee389c0a","type":"UnionRenderers"}},"id":"606a1557-e743-4d39-8b0b-b16220b227a6","type":"ColumnDataSource"},{"attributes":{"plot":null,"text":"Gas- en elektriciteitsprijzen excl. btw 2011-2017"},"id":"17fb104b-1eb0-42c9-9496-5fc5f900dd81","type":"Title"},{"attributes":{},"id":"08115c7e-f894-48ab-99f0-49eeb7b698bd","type":"BasicTicker"},{"attributes":{"data_source":{"id":"606a1557-e743-4d39-8b0b-b16220b227a6","type":"ColumnDataSource"},"glyph":{"id":"b82539be-b8b3-4eae-a1e5-b3c450c84aa4","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"e54fffb5-9985-41ed-954d-13812ba7bafe","type":"Line"},"selection_glyph":null,"view":{"id":"0ed65e8f-54a2-407d-988f-0b124fd05fa3","type":"CDSView"}},"id":"a12d9968-89dd-4bed-af8a-63a872172abb","type":"GlyphRenderer"},{"attributes":{"source":{"id":"606a1557-e743-4d39-8b0b-b16220b227a6","type":"ColumnDataSource"}},"id":"0ed65e8f-54a2-407d-988f-0b124fd05fa3","type":"CDSView"},{"attributes":{"dimension":1,"plot":{"id":"4959cd6a-59f7-46de-af51-34043b6e0451","subtype":"Figure","type":"Plot"},"ticker":{"id":"a5cf8781-c1b0-4f1b-9360-886163ecb326","type":"BasicTicker"}},"id":"4ac44d1e-b1d7-46f8-9fc1-64792cc09568","type":"Grid"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"9d96f368-66dd-4210-85df-ac892f95ecbc","type":"GlyphRenderer"}],"tooltips":[["Gasprijs","@y2"]]},"id":"6a284771-bf95-40cd-97c4-3504a30d0a2c","type":"HoverTool"},{"attributes":{},"id":"b27a71c2-fe28-4267-98ff-87727f8b1f49","type":"LinearScale"},{"attributes":{"background_fill_alpha":{"value":0.5},"below":[{"id":"a05bb7bf-c6ca-4714-a913-6c8ebd0d5b43","type":"LinearAxis"}],"border_fill_alpha":{"value":0.35},"extra_y_ranges":{"foo":{"id":"4003c652-071f-4156-9efb-612d189b3ca1","type":"Range1d"}},"left":[{"id":"492b25b6-6b5d-4879-b8ae-0a8eade5de2b","type":"LinearAxis"},{"id":"8187e648-ba8f-4ea7-9fac-64fb8457ec4b","type":"LinearAxis"}],"plot_height":400,"plot_width":500,"renderers":[{"id":"a05bb7bf-c6ca-4714-a913-6c8ebd0d5b43","type":"LinearAxis"},{"id":"2817420f-0a1a-46cf-956e-40c125626341","type":"Grid"},{"id":"492b25b6-6b5d-4879-b8ae-0a8eade5de2b","type":"LinearAxis"},{"id":"4ac44d1e-b1d7-46f8-9fc1-64792cc09568","type":"Grid"},{"id":"8f6341c8-435a-40c1-91d3-1aac4ef78b36","type":"Legend"},{"id":"a12d9968-89dd-4bed-af8a-63a872172abb","type":"GlyphRenderer"},{"id":"9d96f368-66dd-4210-85df-ac892f95ecbc","type":"GlyphRenderer"},{"id":"8187e648-ba8f-4ea7-9fac-64fb8457ec4b","type":"LinearAxis"}],"title":{"id":"17fb104b-1eb0-42c9-9496-5fc5f900dd81","type":"Title"},"toolbar":{"id":"cbcc7e38-34ae-486c-9557-bd2feda506fe","type":"Toolbar"},"toolbar_location":"below","x_range":{"id":"4f2cd847-29c4-4cfe-b54d-e9627dceb5a3","type":"DataRange1d"},"x_scale":{"id":"b27a71c2-fe28-4267-98ff-87727f8b1f49","type":"LinearScale"},"y_range":{"id":"8293eecb-361a-4eb9-91a0-7252558b0036","type":"Range1d"},"y_scale":{"id":"87c72375-e660-42c7-ba21-56747411f5e6","type":"LinearScale"}},"id":"4959cd6a-59f7-46de-af51-34043b6e0451","subtype":"Figure","type":"Plot"}],"root_ids":["4959cd6a-59f7-46de-af51-34043b6e0451"]},"title":"Bokeh Application","version":"0.12.16"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('155d6672-340e-4cc3-8b6c-973dc9645130').textContent;
+                  var render_items = [{"docid":"e132085f-350d-4283-9393-7a62afa5ad26","elementid":"511cfd37-e688-45c1-ae1e-8b16c34e74f2","modelid":"4959cd6a-59f7-46de-af51-34043b6e0451"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+		</div>
+			</div>
+			<div class="column" style="background-color:#bbb;">
+				<h2>Column 2</h2>
+				<p>Some text..</p>
+			</div>
+		</div>
+		
+	</body>
+</html>
