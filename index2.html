@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+       <script>
+function writeText(txt) {
+    document.getElementById("desc").innerHTML = txt;
+}
+</script>
+    </head>
+  <body>
+
+    <img src="Stadsdelen_Amsterdam.png" alt="Stadsdelen Amsterdam" usemap="#kaart" width="950" height="656">
+
+    <map name="kaart">
+      <area title="Westpoort" shape="rect" coords="102,36,321,148" alt="Westpoort" onmouseover="writeText('Dit is westpoort.  <br/>  Hier wonen 3 mensen.')">
+      <area title="Nieuw-West" shape="rect" coords="95,306,252,216" alt="Nieuw-West" onmouseover="writeText('Dit is sdasdsd.  <br/>  Hier wonen 21323 mensen.')">
+      <area title="West" shape="rect" coords="323,245,390,200" alt="West">
+      <area title="Noord" shape="rect" coords="906,74,574,187" alt="Noord">
+      <area title="Centrum" shape="rect" coords="517,236,409,272" alt="Centrum">
+      <area title="Zuid" shape="rect" coords="348,423,454,316" alt="Zuid">
+      <area title="Oost" shape="rect" coords="816,266,539,301" alt="Oost">
+      <area title="Zuidoost" shape="rect" coords="578,579,708,491" alt="Zuidoost">
+    </map>
+
+<p id="desc">Mouse over the sun and the planets and see the different descriptions.</p>
+  </body>
+</html>
