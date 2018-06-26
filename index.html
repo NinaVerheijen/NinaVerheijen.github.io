@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      #desc{
+        float: right;
+      }
+    </style>
+
+    <!--Function that shows text -->
     <script>
       function writeText(txt) {
         document.getElementById("desc").innerHTML = txt;
@@ -8,23 +15,30 @@
     </script>
   </head>
   <body>
+    <!--Map of Amsterdam with map alt for areas -->
+    <img src="Stadsdelen_Amsterdam.png" alt="Stadsdelen Amsterdam" usemap="#kaart" width="650" height="447">
 
-    <img src="Stadsdelen_Amsterdam.png" alt="Stadsdelen Amsterdam" usemap="#kaart" width="950" height="656">
-
+    <!-- Amsterdam divided in areas with some info-->
     <map name="kaart">
-      <area title="Westpoort" shape="rect" coords="102,36,321,148" alt="Westpoort"
-      onmouseover="writeText('Dit is Westpoort.')">
-      <area title="Nieuw-West" shape="rect" coords="95,306,252,216" alt="Nieuw-West"
-      onmouseover="writeText('Dit is Nieuw-West.')">
-      <area title="West" shape="rect" coords="323,245,390,200" alt="West">
-      <area title="Noord" shape="rect" coords="906,74,574,187" alt="Noord">
-      <area title="Centrum" shape="rect" coords="517,236,409,272" alt="Centrum">
-      <area title="Zuid" shape="rect" coords="348,423,454,316" alt="Zuid">
-      <area title="Oost" shape="rect" coords="816,266,539,301" alt="Oost">
-      <area title="Zuidoost" shape="rect" coords="578,579,708,491" alt="Zuidoost">
+      <area shape="rect" coords="65,29,218,101" alt="Westpoort"
+      onmouseover="writeText('Westpoort: <br> Inwoners: 192 <br> gem. stroomverbruik: 3870,44 ')">
+      <area shape="rect" coords="67,135,190,225" alt="Nieuw-West"
+      onmouseover="writeText('Nieuw-West: <br> Inwoners: 151677	 <br> gem. stroomverbruik: 2555,81 ')">
+      <area shape="rect" coords="210,130,265,166" alt="West"
+      onmouseover="writeText('West: <br> Inwoners: 143842 <br> gem. stroomverbruik: 2315,59 ')">
+      <area shape="rect" coords="290,40,618,130" alt="Noord"
+      onmouseover="writeText('Noord: <br> Inwoners: 94766 <br> gem. stroomverbruik: 2590,14 ')">
+      <area shape="rect" coords="287,157,351,184" alt="Centrum"
+      onmouseover="writeText('Centrum: <br> Inwoners: 86422 <br> gem. stroomverbruik: 2877,37 ')">
+      <area shape="rect" coords="240,212,306,290" alt="Zuid"
+      onmouseover="writeText('Zuid: <br> Inwoners: 144432 <br> gem. stroomverbruik: 2631,16 ')">
+      <area shape="rect" coords="260,183,555,205" alt="Oost"
+      onmouseover="writeText('Oost: <br> Inwoners: 135767	 <br> gem. stroomverbruik: 2522,63 ')">
+      <area shape="rect" coords="387,346,496,385" alt="Zuidoost"
+      onmouseover="writeText('Zuidoost: <br> Inwoners: 87854 <br> gem. stroomverbruik: 2663,90 ')">
     </map>
 
-
+    <p id="desc">Mouse over the the map and see the different descriptions.</p>
 
   </body>
 </html>
