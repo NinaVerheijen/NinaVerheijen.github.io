@@ -1,86 +1,44 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-<head>
-        <meta charset="utf-8">
-        <title>Bokeh Plot</title>
-        
-<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css" type="text/css" />
-        
-<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js"></script>
-<script type="text/javascript">
-    Bokeh.set_log_level("info");
-</script>
-    </head>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<a href='gas_elk_prijzen.html'>Dit is een link naar een plot! WAUW!</a>
+  <head>
+    <style>
+      #desc{
+        float: right;
+      }
+    </style>
 
-<div class="plot">
-    
-        <div class="bk-root">
-            <div class="bk-plotdiv" id="ebe7a2de-e1e3-42a2-9fbe-c49ce0f6f818"></div>
-        </div>
-        
-        <script type="application/json" id="02f41e0b-2b19-4e15-a872-4792da38dfa4">
-          {"586ac4ec-0171-4b87-8e58-c53ff77c49a2":{"roots":{"references":[{"attributes":{},"id":"991fc47f-c564-4e51-a782-97513243b18d","type":"ResetTool"},{"attributes":{},"id":"51527ce9-b11d-4af8-88e9-259363455804","type":"LinearScale"},{"attributes":{"data_source":{"id":"ffbd7658-6330-4ce1-9217-d371739366a7","type":"ColumnDataSource"},"glyph":{"id":"aa59a5f3-073e-46dd-b412-4e6bf398b51e","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"beccd844-ecd9-474b-b62a-0c0f5fb95588","type":"Line"},"selection_glyph":null,"view":{"id":"9f74bef8-13cb-4cca-97ed-b4e3864c152b","type":"CDSView"},"y_range_name":"foo"},"id":"d2c05d2b-c57b-4a57-9ec4-86a8cd5f9753","type":"GlyphRenderer"},{"attributes":{"label":{"value":"Elektriciteitsprijzen"},"renderers":[{"id":"e4becdd2-b1a7-41f1-a763-cd7d693e267d","type":"GlyphRenderer"}]},"id":"324a766b-657b-49c2-990d-95cddfa06efd","type":"LegendItem"},{"attributes":{"dimension":1,"plot":{"id":"6c8b0992-083c-4a22-b89b-bbfc8be79726","subtype":"Figure","type":"Plot"},"ticker":{"id":"58d1fe54-ead2-4ca0-8a24-ffe65d973c2a","type":"BasicTicker"}},"id":"19e8e84f-9d2b-4f3d-bfd5-5c4f05fbd959","type":"Grid"},{"attributes":{"plot":null,"text":"Gas- en elektriciteitsprijzen excl. btw 2011-2017"},"id":"5448d01b-7b46-478f-b111-63fd77ee0a4b","type":"Title"},{"attributes":{"below":[{"id":"86be49c5-4f60-4d8a-bf7e-fcbaeb7a2876","type":"LinearAxis"}],"extra_y_ranges":{"foo":{"id":"63e58aad-443b-4a55-8124-a58c344222c0","type":"Range1d"}},"left":[{"id":"3a27a082-a3de-4b93-ba79-209a8580e016","type":"LinearAxis"},{"id":"e4cbba78-07dd-4fe6-8cd8-161693fbe65d","type":"LinearAxis"}],"plot_width":700,"renderers":[{"id":"86be49c5-4f60-4d8a-bf7e-fcbaeb7a2876","type":"LinearAxis"},{"id":"56dd136c-e227-4b6e-a960-1c7b61a0f38b","type":"Grid"},{"id":"3a27a082-a3de-4b93-ba79-209a8580e016","type":"LinearAxis"},{"id":"19e8e84f-9d2b-4f3d-bfd5-5c4f05fbd959","type":"Grid"},{"id":"63c9d8a7-f1f8-4d87-b3cd-9c3cc85ffa8b","type":"BoxAnnotation"},{"id":"d4b1afab-a034-4e2c-9c97-1a8db22016d8","type":"Legend"},{"id":"e4becdd2-b1a7-41f1-a763-cd7d693e267d","type":"GlyphRenderer"},{"id":"d2c05d2b-c57b-4a57-9ec4-86a8cd5f9753","type":"GlyphRenderer"},{"id":"e4cbba78-07dd-4fe6-8cd8-161693fbe65d","type":"LinearAxis"}],"title":{"id":"5448d01b-7b46-478f-b111-63fd77ee0a4b","type":"Title"},"toolbar":{"id":"c4f1eb0e-d69f-4405-a008-ad48c4851f3c","type":"Toolbar"},"x_range":{"id":"13c23c51-65e3-4ab4-ab11-c19734242906","type":"DataRange1d"},"x_scale":{"id":"51527ce9-b11d-4af8-88e9-259363455804","type":"LinearScale"},"y_range":{"id":"b8356473-4cda-4ce4-9298-b7dfc049e7c2","type":"Range1d"},"y_scale":{"id":"aa93a69c-ff39-405e-a9d5-59c25faa52b1","type":"LinearScale"}},"id":"6c8b0992-083c-4a22-b89b-bbfc8be79726","subtype":"Figure","type":"Plot"},{"attributes":{"source":{"id":"ffbd7658-6330-4ce1-9217-d371739366a7","type":"ColumnDataSource"}},"id":"9f74bef8-13cb-4cca-97ed-b4e3864c152b","type":"CDSView"},{"attributes":{"callback":null,"end":12500,"start":8600},"id":"63e58aad-443b-4a55-8124-a58c344222c0","type":"Range1d"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"52f936f9-f22c-4cb2-a78f-c23b4584a33e","type":"Line"},{"attributes":{"callback":null},"id":"13c23c51-65e3-4ab4-ab11-c19734242906","type":"DataRange1d"},{"attributes":{},"id":"224f000d-c633-4a8d-afd0-faa8893dc601","type":"Selection"},{"attributes":{"line_color":"olive","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"aa59a5f3-073e-46dd-b412-4e6bf398b51e","type":"Line"},{"attributes":{"callback":null,"data":{"x":[2011,2012,2013,2014,2015,2016,2017],"y":[125,128,127,128,121,115,109]},"selected":{"id":"224f000d-c633-4a8d-afd0-faa8893dc601","type":"Selection"},"selection_policy":{"id":"7e57afa7-acae-43fc-9711-becfebcbfe06","type":"UnionRenderers"}},"id":"592e8afa-a14f-45ff-9655-6fa49a2eb38c","type":"ColumnDataSource"},{"attributes":{"overlay":{"id":"63c9d8a7-f1f8-4d87-b3cd-9c3cc85ffa8b","type":"BoxAnnotation"}},"id":"32cd942f-cea5-4a85-ad22-5f93482b7054","type":"BoxZoomTool"},{"attributes":{},"id":"aa93a69c-ff39-405e-a9d5-59c25faa52b1","type":"LinearScale"},{"attributes":{},"id":"ccfc15be-fbda-45f8-9b19-5038c8a25147","type":"BasicTickFormatter"},{"attributes":{"callback":null,"data":{"x":[2011,2012,2013,2014,2015,2016,2017],"y":[10353,11706,12068,11635,10949,9654,9016]},"selected":{"id":"9c1a42dd-4614-4536-a375-ab22bb26ba76","type":"Selection"},"selection_policy":{"id":"f87def53-c2ca-4ef2-a87f-eb35b97d93da","type":"UnionRenderers"}},"id":"ffbd7658-6330-4ce1-9217-d371739366a7","type":"ColumnDataSource"},{"attributes":{"source":{"id":"592e8afa-a14f-45ff-9655-6fa49a2eb38c","type":"ColumnDataSource"}},"id":"d1453b54-fd89-4afa-931b-d6f40073c7a1","type":"CDSView"},{"attributes":{},"id":"a71f9ab7-39b9-4097-b33b-848bd18b278c","type":"WheelZoomTool"},{"attributes":{"items":[{"id":"324a766b-657b-49c2-990d-95cddfa06efd","type":"LegendItem"},{"id":"ac0ad5f5-797c-4f74-b673-0ce39754b365","type":"LegendItem"}],"plot":{"id":"6c8b0992-083c-4a22-b89b-bbfc8be79726","subtype":"Figure","type":"Plot"}},"id":"d4b1afab-a034-4e2c-9c97-1a8db22016d8","type":"Legend"},{"attributes":{"label":{"value":"Gasprijzen"},"renderers":[{"id":"d2c05d2b-c57b-4a57-9ec4-86a8cd5f9753","type":"GlyphRenderer"}]},"id":"ac0ad5f5-797c-4f74-b673-0ce39754b365","type":"LegendItem"},{"attributes":{},"id":"89caf68f-6c52-49a0-9ca0-a4081452dff5","type":"HelpTool"},{"attributes":{},"id":"7f21e3f6-4064-464d-aa1c-4329a5e5d085","type":"BasicTicker"},{"attributes":{"callback":null,"end":137,"start":100},"id":"b8356473-4cda-4ce4-9298-b7dfc049e7c2","type":"Range1d"},{"attributes":{"data_source":{"id":"592e8afa-a14f-45ff-9655-6fa49a2eb38c","type":"ColumnDataSource"},"glyph":{"id":"94537fc1-65fc-4735-96af-10317acf1b71","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"52f936f9-f22c-4cb2-a78f-c23b4584a33e","type":"Line"},"selection_glyph":null,"view":{"id":"d1453b54-fd89-4afa-931b-d6f40073c7a1","type":"CDSView"}},"id":"e4becdd2-b1a7-41f1-a763-cd7d693e267d","type":"GlyphRenderer"},{"attributes":{},"id":"6f30ac45-e8de-4722-a38e-8c4732f04fef","type":"BasicTickFormatter"},{"attributes":{"axis_label":"Gasprijzen","formatter":{"id":"6f30ac45-e8de-4722-a38e-8c4732f04fef","type":"BasicTickFormatter"},"plot":{"id":"6c8b0992-083c-4a22-b89b-bbfc8be79726","subtype":"Figure","type":"Plot"},"ticker":{"id":"d912ac4b-2079-4a8a-b446-961eb2a977dc","type":"BasicTicker"},"y_range_name":"foo"},"id":"e4cbba78-07dd-4fe6-8cd8-161693fbe65d","type":"LinearAxis"},{"attributes":{"plot":{"id":"6c8b0992-083c-4a22-b89b-bbfc8be79726","subtype":"Figure","type":"Plot"},"ticker":{"id":"7f21e3f6-4064-464d-aa1c-4329a5e5d085","type":"BasicTicker"}},"id":"56dd136c-e227-4b6e-a960-1c7b61a0f38b","type":"Grid"},{"attributes":{},"id":"9c1a42dd-4614-4536-a375-ab22bb26ba76","type":"Selection"},{"attributes":{"axis_label":"Elektriciteitsprijzen","formatter":{"id":"3fb4b10d-e219-44ee-a7c1-c3b6171285ce","type":"BasicTickFormatter"},"plot":{"id":"6c8b0992-083c-4a22-b89b-bbfc8be79726","subtype":"Figure","type":"Plot"},"ticker":{"id":"58d1fe54-ead2-4ca0-8a24-ffe65d973c2a","type":"BasicTicker"}},"id":"3a27a082-a3de-4b93-ba79-209a8580e016","type":"LinearAxis"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"beccd844-ecd9-474b-b62a-0c0f5fb95588","type":"Line"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"63c9d8a7-f1f8-4d87-b3cd-9c3cc85ffa8b","type":"BoxAnnotation"},{"attributes":{"line_color":"blue","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"94537fc1-65fc-4735-96af-10317acf1b71","type":"Line"},{"attributes":{},"id":"7e57afa7-acae-43fc-9711-becfebcbfe06","type":"UnionRenderers"},{"attributes":{"formatter":{"id":"ccfc15be-fbda-45f8-9b19-5038c8a25147","type":"BasicTickFormatter"},"plot":{"id":"6c8b0992-083c-4a22-b89b-bbfc8be79726","subtype":"Figure","type":"Plot"},"ticker":{"id":"7f21e3f6-4064-464d-aa1c-4329a5e5d085","type":"BasicTicker"}},"id":"86be49c5-4f60-4d8a-bf7e-fcbaeb7a2876","type":"LinearAxis"},{"attributes":{},"id":"58d1fe54-ead2-4ca0-8a24-ffe65d973c2a","type":"BasicTicker"},{"attributes":{},"id":"3fb4b10d-e219-44ee-a7c1-c3b6171285ce","type":"BasicTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"afeb70dd-a3a4-4975-a32d-93d9da1c4280","type":"PanTool"},{"id":"a71f9ab7-39b9-4097-b33b-848bd18b278c","type":"WheelZoomTool"},{"id":"32cd942f-cea5-4a85-ad22-5f93482b7054","type":"BoxZoomTool"},{"id":"68e5609c-0d66-4560-bbcc-332eb04a7efd","type":"SaveTool"},{"id":"991fc47f-c564-4e51-a782-97513243b18d","type":"ResetTool"},{"id":"89caf68f-6c52-49a0-9ca0-a4081452dff5","type":"HelpTool"}]},"id":"c4f1eb0e-d69f-4405-a008-ad48c4851f3c","type":"Toolbar"},{"attributes":{},"id":"68e5609c-0d66-4560-bbcc-332eb04a7efd","type":"SaveTool"},{"attributes":{},"id":"f87def53-c2ca-4ef2-a87f-eb35b97d93da","type":"UnionRenderers"},{"attributes":{},"id":"d912ac4b-2079-4a8a-b446-961eb2a977dc","type":"BasicTicker"},{"attributes":{},"id":"afeb70dd-a3a4-4975-a32d-93d9da1c4280","type":"PanTool"}],"root_ids":["6c8b0992-083c-4a22-b89b-bbfc8be79726"]},"title":"Bokeh Application","version":"0.12.16"}}
-        </script>
-        <script type="text/javascript">
-          (function() {
-            var fn = function() {
-              Bokeh.safely(function() {
-                (function(root) {
-                  function embed_document(root) {
-                    
-                  var docs_json = document.getElementById('02f41e0b-2b19-4e15-a872-4792da38dfa4').textContent;
-                  var render_items = [{"docid":"586ac4ec-0171-4b87-8e58-c53ff77c49a2","elementid":"ebe7a2de-e1e3-42a2-9fbe-c49ce0f6f818","modelid":"6c8b0992-083c-4a22-b89b-bbfc8be79726"}];
-                  root.Bokeh.embed.embed_items(docs_json, render_items);
-                
-                  }
-                  if (root.Bokeh !== undefined) {
-                    embed_document(root);
-                  } else {
-                    var attempts = 0;
-                    var timer = setInterval(function(root) {
-                      if (root.Bokeh !== undefined) {
-                        embed_document(root);
-                        clearInterval(timer);
-                      }
-                      attempts++;
-                      if (attempts > 100) {
-                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
-                        clearInterval(timer);
-                      }
-                    }, 10, root)
-                  }
-                })(window);
-              });
-            };
-            if (document.readyState != "loading") fn();
-            else document.addEventListener("DOMContentLoaded", fn);
-          })();
-        </script>
-</div>
-
-</body>
-=======
+    <!--Function that shows text -->
+    <script>
+      function writeText(txt) {
+        document.getElementById("desc").innerHTML = txt;
+      }
+    </script>
+  </head>
   <body>
+    <!--Map of Amsterdam with map alt for areas -->
+    <img src="Stadsdelen_Amsterdam.png" alt="Stadsdelen Amsterdam" usemap="#kaart" width="650" height="447">
 
-    <img src="Stadsdelen_Amsterdam.png" alt="Stadsdelen Amsterdam" usemap="#kaart" width="950" height="656">
-
+    <!-- Amsterdam divided in areas with some info-->
     <map name="kaart">
-      <area title="Westpoort" shape="rect" coords="102,36,321,148" alt="Westpoort">
-      <area title="Nieuw-West" shape="rect" coords="95,306,252,216" alt="Nieuw-West">
-      <area title="West" shape="rect" coords="323,245,390,200" alt="West">
-      <area title="Noord" shape="rect" coords="906,74,574,187" alt="Noord">
-      <area title="Centrum" shape="rect" coords="517,236,409,272" alt="Centrum">
-      <area title="Zuid" shape="rect" coords="348,423,454,316" alt="Zuid">
-      <area title="Oost" shape="rect" coords="816,266,539,301" alt="Oost">
-      <area title="Zuidoost" shape="rect" coords="578,579,708,491" alt="Zuidoost">
+      <area shape="rect" coords="65,29,218,101" alt="Westpoort"
+      onmouseover="writeText('Westpoort: <br> Inwoners: 192 <br> gem. stroomverbruik: 3870,44 ')">
+      <area shape="rect" coords="67,135,190,225" alt="Nieuw-West"
+      onmouseover="writeText('Nieuw-West: <br> Inwoners: 151677	 <br> gem. stroomverbruik: 2555,81 ')">
+      <area shape="rect" coords="210,130,265,166" alt="West"
+      onmouseover="writeText('West: <br> Inwoners: 143842 <br> gem. stroomverbruik: 2315,59 ')">
+      <area shape="rect" coords="290,40,618,130" alt="Noord"
+      onmouseover="writeText('Noord: <br> Inwoners: 94766 <br> gem. stroomverbruik: 2590,14 ')">
+      <area shape="rect" coords="287,157,351,184" alt="Centrum"
+      onmouseover="writeText('Centrum: <br> Inwoners: 86422 <br> gem. stroomverbruik: 2877,37 ')">
+      <area shape="rect" coords="240,212,306,290" alt="Zuid"
+      onmouseover="writeText('Zuid: <br> Inwoners: 144432 <br> gem. stroomverbruik: 2631,16 ')">
+      <area shape="rect" coords="260,183,555,205" alt="Oost"
+      onmouseover="writeText('Oost: <br> Inwoners: 135767	 <br> gem. stroomverbruik: 2522,63 ')">
+      <area shape="rect" coords="387,346,496,385" alt="Zuidoost"
+      onmouseover="writeText('Zuidoost: <br> Inwoners: 87854 <br> gem. stroomverbruik: 2663,90 ')">
     </map>
 
+    <p id="desc">Mouse over the the map and see the different descriptions.</p>
 
   </body>
->>>>>>> Nina
 </html>
