@@ -1,0 +1,51 @@
+#desc{
+	float: right;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.row {
+	background-color: white;
+	margin: 3%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.plot {
+	color:black;
+}
+
+.cross {
+	-webkit-clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+	background-color: white;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	height: 50px;
+	width: 50px;
+}
+
+.crosses {
+	float: left;
+	margin-right: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

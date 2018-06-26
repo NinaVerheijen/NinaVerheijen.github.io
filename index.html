@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      #desc{
-        float: right;
-      }
-    </style>
+	<title>POWERRRRR</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<link rel="stylesheet" href="style.css">
 
-    <!--Function that shows text -->
+    <!--Functie voor kaart om text per gebied te laten zien-->
     <script>
       function writeText(txt) {
         document.getElementById("desc").innerHTML = txt;
       }
     </script>
+	
+	<!-- Nodig voor bokeh -->
+	<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css" type="text/css" />
+	<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js"></script>
+	<script type="text/javascript"> Bokeh.set_log_level("info"); </script>
+	
   </head>
   <body>
-    <!--Map of Amsterdam with map alt for areas -->
+    <div class="kaartdiv">
+	<!--Map of Amsterdam with map alt for areas -->
     <img src="Stadsdelen_Amsterdam.png" alt="Stadsdelen Amsterdam" usemap="#kaart" width="650" height="447">
 
     <!-- Amsterdam divided in areas with some info-->
@@ -39,6 +44,182 @@
     </map>
 
     <p id="desc">Mouse over the the map and see the different descriptions.</p>
-
+	</div>
+	
+	<div class="row">
+			<div class="column" style="background-color:#d60a0a;">
+				<div class="crosses">
+					<div class="cross"></div>
+					<div class="cross"></div>
+					<div class="cross"></div>
+				</div>
+				<br>
+				<h2>Is je opgevallen dat het energieverbruik elk jaar omlaag gaat?</h2>
+				<br><br>
+				<div class="plot">
+				<div class="bk-root">
+            <div class="bk-plotdiv" id="5a4f7f3c-854e-4c1a-b8a9-6c15d4c8e6a9"></div>
+        </div>
+        
+        <script type="application/json" id="9aeed532-97d3-4639-9965-7376b9c72ff5">
+          {"d6446ba8-36cd-495a-b009-2656c1ff2564":{"roots":{"references":[{"attributes":{"axis_label":"Gasverbruik(SJV)","formatter":{"id":"ff967ec3-e649-4524-add6-c342173466be","type":"BasicTickFormatter"},"plot":{"id":"d3fc7eea-f14a-4eb6-9ab0-f41a9e68f8f3","subtype":"Figure","type":"Plot"},"ticker":{"id":"b8e47afb-d37f-4518-8dea-dca01b5cb990","type":"BasicTicker"},"y_range_name":"foo"},"id":"2ee2f473-cf45-49a7-8090-acd24d312cbe","type":"LinearAxis"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"f45f5ac4-8981-4ba2-a285-190c44bff9c5","type":"GlyphRenderer"}],"tooltips":[["Gasverbruik","@y2{int}"]]},"id":"f23d1798-b506-4c67-8024-44f5c9fcb007","type":"HoverTool"},{"attributes":{"background_fill_alpha":{"value":0.5},"below":[{"id":"c277c718-e24e-4eeb-8084-4fb086b94462","type":"LinearAxis"}],"border_fill_alpha":{"value":0.35},"extra_y_ranges":{"foo":{"id":"bd5658f3-d0b0-4451-95e5-2da8b179ab87","type":"Range1d"}},"left":[{"id":"05600c45-e363-4639-b666-dca793bcb048","type":"LinearAxis"},{"id":"2ee2f473-cf45-49a7-8090-acd24d312cbe","type":"LinearAxis"}],"plot_height":500,"renderers":[{"id":"c277c718-e24e-4eeb-8084-4fb086b94462","type":"LinearAxis"},{"id":"25ca9d1a-2d53-40ad-b839-71bd1a4b9b35","type":"Grid"},{"id":"05600c45-e363-4639-b666-dca793bcb048","type":"LinearAxis"},{"id":"32435077-25c5-4b91-a628-9966ffe637b2","type":"Grid"},{"id":"3ba85669-9dc7-476c-815b-0dddd0ad2085","type":"Legend"},{"id":"c6fa5b36-92e7-4b83-b138-0bb7cf252eb0","type":"GlyphRenderer"},{"id":"f45f5ac4-8981-4ba2-a285-190c44bff9c5","type":"GlyphRenderer"},{"id":"2ee2f473-cf45-49a7-8090-acd24d312cbe","type":"LinearAxis"}],"title":{"id":"8cbc1193-62c8-4254-8d37-03e83a7758ae","type":"Title"},"toolbar":{"id":"42d02918-b0e6-4319-afbd-4afb3b8513a2","type":"Toolbar"},"toolbar_location":"below","x_range":{"id":"b374115d-caf1-4da9-b7fa-4ac6877febe5","type":"DataRange1d"},"x_scale":{"id":"f4cff1c0-acbe-4006-b609-2d688a51ef9e","type":"LinearScale"},"y_range":{"id":"63776801-0bea-48a6-aa82-e9e0d511d1c5","type":"Range1d"},"y_scale":{"id":"d546ae91-ca74-4fa5-96c3-c4c0bc5ccafc","type":"LinearScale"}},"id":"d3fc7eea-f14a-4eb6-9ab0-f41a9e68f8f3","subtype":"Figure","type":"Plot"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y2"}},"id":"729434b6-165e-4ddf-88f5-35a640dc72d9","type":"Line"},{"attributes":{"callback":null,"end":1505,"start":1285},"id":"bd5658f3-d0b0-4451-95e5-2da8b179ab87","type":"Range1d"},{"attributes":{},"id":"b8e47afb-d37f-4518-8dea-dca01b5cb990","type":"BasicTicker"},{"attributes":{"line_color":"blue","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"c78259eb-7f3a-4190-82ac-4b32a8d5a3de","type":"Line"},{"attributes":{"callback":null},"id":"b374115d-caf1-4da9-b7fa-4ac6877febe5","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"640793b5-4ec0-4a32-b7eb-7c607886b251","type":"HoverTool"},{"id":"f23d1798-b506-4c67-8024-44f5c9fcb007","type":"HoverTool"}]},"id":"42d02918-b0e6-4319-afbd-4afb3b8513a2","type":"Toolbar"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"c6fa5b36-92e7-4b83-b138-0bb7cf252eb0","type":"GlyphRenderer"}],"tooltips":[["Stroomverbruik","@y{int}"]]},"id":"640793b5-4ec0-4a32-b7eb-7c607886b251","type":"HoverTool"},{"attributes":{"data_source":{"id":"926a7084-5255-4420-b7b3-7f517f4e31c3","type":"ColumnDataSource"},"glyph":{"id":"c78259eb-7f3a-4190-82ac-4b32a8d5a3de","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"80a26c04-aebd-4bed-b6ce-4254846079be","type":"Line"},"selection_glyph":null,"view":{"id":"7910d841-289f-41f2-b07f-c214fb4aa369","type":"CDSView"}},"id":"c6fa5b36-92e7-4b83-b138-0bb7cf252eb0","type":"GlyphRenderer"},{"attributes":{"plot":null,"text":"Gem. Gas- en elektriciteitsverbruik Amsterdam 2011-2017","text_color":{"value":"white"}},"id":"8cbc1193-62c8-4254-8d37-03e83a7758ae","type":"Title"},{"attributes":{"callback":null,"end":2650,"start":2440},"id":"63776801-0bea-48a6-aa82-e9e0d511d1c5","type":"Range1d"},{"attributes":{"label":{"value":"Elektriciteitverbruik"},"renderers":[{"id":"c6fa5b36-92e7-4b83-b138-0bb7cf252eb0","type":"GlyphRenderer"}]},"id":"81752d90-555b-4703-8151-0d7efc88911b","type":"LegendItem"},{"attributes":{},"id":"f4cff1c0-acbe-4006-b609-2d688a51ef9e","type":"LinearScale"},{"attributes":{},"id":"01671517-9278-4e61-be2b-3adb3a6f4b3e","type":"UnionRenderers"},{"attributes":{},"id":"a59398f8-afa3-4c35-82f8-3b357996a8ad","type":"BasicTicker"},{"attributes":{"source":{"id":"926a7084-5255-4420-b7b3-7f517f4e31c3","type":"ColumnDataSource"}},"id":"7910d841-289f-41f2-b07f-c214fb4aa369","type":"CDSView"},{"attributes":{"plot":{"id":"d3fc7eea-f14a-4eb6-9ab0-f41a9e68f8f3","subtype":"Figure","type":"Plot"},"ticker":{"id":"a59398f8-afa3-4c35-82f8-3b357996a8ad","type":"BasicTicker"}},"id":"25ca9d1a-2d53-40ad-b839-71bd1a4b9b35","type":"Grid"},{"attributes":{},"id":"d546ae91-ca74-4fa5-96c3-c4c0bc5ccafc","type":"LinearScale"},{"attributes":{},"id":"33523b46-c5a1-4164-912d-e18ecbc2f32e","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"926a7084-5255-4420-b7b3-7f517f4e31c3","type":"ColumnDataSource"},"glyph":{"id":"9c0c4948-e47a-4bae-86a9-128273fc6d02","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"729434b6-165e-4ddf-88f5-35a640dc72d9","type":"Line"},"selection_glyph":null,"view":{"id":"7ca790af-7523-4e82-86dd-d44ba5b7b692","type":"CDSView"},"y_range_name":"foo"},"id":"f45f5ac4-8981-4ba2-a285-190c44bff9c5","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"41938cdf-cf9e-4108-93ad-347e265bc2f8","type":"BasicTickFormatter"},"plot":{"id":"d3fc7eea-f14a-4eb6-9ab0-f41a9e68f8f3","subtype":"Figure","type":"Plot"},"ticker":{"id":"a59398f8-afa3-4c35-82f8-3b357996a8ad","type":"BasicTicker"}},"id":"c277c718-e24e-4eeb-8084-4fb086b94462","type":"LinearAxis"},{"attributes":{},"id":"ff967ec3-e649-4524-add6-c342173466be","type":"BasicTickFormatter"},{"attributes":{},"id":"41938cdf-cf9e-4108-93ad-347e265bc2f8","type":"BasicTickFormatter"},{"attributes":{"background_fill_alpha":{"value":0.5},"items":[{"id":"81752d90-555b-4703-8151-0d7efc88911b","type":"LegendItem"},{"id":"b101c870-a95a-473b-90ed-3ee42141dba5","type":"LegendItem"}],"location":"bottom_left","plot":{"id":"d3fc7eea-f14a-4eb6-9ab0-f41a9e68f8f3","subtype":"Figure","type":"Plot"}},"id":"3ba85669-9dc7-476c-815b-0dddd0ad2085","type":"Legend"},{"attributes":{"callback":null,"data":{"x":[2011,2012,2013,2014,2015,2016,2017],"y":[2620.7403023824068,2626.973642233194,2632.0771908581805,2613.300775311645,2539.8194738433626,2511.9447887323945,2471.044430361921],"y2":[1476.0704334967702,1442.7477687233218,1412.9544575891132,1405.992756415196,1357.8721995534684,1327.6443328968428,1314.4832820219087]},"selected":{"id":"4d0ecbc1-026a-47a8-9639-205b4a02d068","type":"Selection"},"selection_policy":{"id":"01671517-9278-4e61-be2b-3adb3a6f4b3e","type":"UnionRenderers"}},"id":"926a7084-5255-4420-b7b3-7f517f4e31c3","type":"ColumnDataSource"},{"attributes":{"label":{"value":"Gasverbruik"},"renderers":[{"id":"f45f5ac4-8981-4ba2-a285-190c44bff9c5","type":"GlyphRenderer"}]},"id":"b101c870-a95a-473b-90ed-3ee42141dba5","type":"LegendItem"},{"attributes":{"axis_label":"Elektriciteitsverbruik (SJV)","formatter":{"id":"33523b46-c5a1-4164-912d-e18ecbc2f32e","type":"BasicTickFormatter"},"plot":{"id":"d3fc7eea-f14a-4eb6-9ab0-f41a9e68f8f3","subtype":"Figure","type":"Plot"},"ticker":{"id":"a9d2efd6-bae8-4d24-be06-ca3966babade","type":"BasicTicker"}},"id":"05600c45-e363-4639-b666-dca793bcb048","type":"LinearAxis"},{"attributes":{"dimension":1,"plot":{"id":"d3fc7eea-f14a-4eb6-9ab0-f41a9e68f8f3","subtype":"Figure","type":"Plot"},"ticker":{"id":"a9d2efd6-bae8-4d24-be06-ca3966babade","type":"BasicTicker"}},"id":"32435077-25c5-4b91-a628-9966ffe637b2","type":"Grid"},{"attributes":{},"id":"a9d2efd6-bae8-4d24-be06-ca3966babade","type":"BasicTicker"},{"attributes":{"line_color":"olive","line_width":3,"x":{"field":"x"},"y":{"field":"y2"}},"id":"9c0c4948-e47a-4bae-86a9-128273fc6d02","type":"Line"},{"attributes":{},"id":"4d0ecbc1-026a-47a8-9639-205b4a02d068","type":"Selection"},{"attributes":{"source":{"id":"926a7084-5255-4420-b7b3-7f517f4e31c3","type":"ColumnDataSource"}},"id":"7ca790af-7523-4e82-86dd-d44ba5b7b692","type":"CDSView"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"80a26c04-aebd-4bed-b6ce-4254846079be","type":"Line"}],"root_ids":["d3fc7eea-f14a-4eb6-9ab0-f41a9e68f8f3"]},"title":"Bokeh Application","version":"0.12.16"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('9aeed532-97d3-4639-9965-7376b9c72ff5').textContent;
+                  var render_items = [{"docid":"d6446ba8-36cd-495a-b009-2656c1ff2564","elementid":"5a4f7f3c-854e-4c1a-b8a9-6c15d4c8e6a9","modelid":"d3fc7eea-f14a-4eb6-9ab0-f41a9e68f8f3"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+		</div>
+				<div class="crosses">
+					<div class="cross"></div>
+					<div class="cross"></div>
+					<div class="cross"></div>
+				</div>
+				<p> <br>Het gemiddelde jaarverbruik van elektriciteit en gas van Amsterdam sterk gedaald de afgelopen seven jaar.
+				Hoe kan dit? Is de bevolking van Amsterdam in deze periode kleiner geworden en is daardoor ook het verbruik gedaald?<br><br>
+				</p>
+				<div class="plot">
+				<div class="bk-root">
+            <div class="bk-plotdiv" id="83227740-7ecc-442a-b587-e7c7885b6efb"></div>
+        </div>
+        
+        <script type="application/json" id="dff4f20f-d14f-4926-8c62-d080d175a141">
+          {"c08a298c-1940-4656-a9b8-a78b285e1619":{"roots":{"references":[{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"d505c23f-b460-4608-81e2-aa859b3990a5","type":"HoverTool"}]},"id":"d73f9bfc-973f-4157-92ae-45fe493c62ca","type":"Toolbar"},{"attributes":{"callback":null},"id":"dcca4f53-7e6a-49eb-bc46-afa0426cf7da","type":"DataRange1d"},{"attributes":{"plot":null,"text":"Inwonertal Amsterdam 2011-2017"},"id":"b2cc4202-0618-4aeb-9e32-7a1f90ebfef7","type":"Title"},{"attributes":{"plot":{"id":"6c875df9-4b66-45d5-948f-7eb565eda117","subtype":"Figure","type":"Plot"},"ticker":{"id":"da3c9479-b652-4131-a999-acdfea8855af","type":"BasicTicker"}},"id":"fae43d68-e98e-41de-9846-bf9189ddb3db","type":"Grid"},{"attributes":{},"id":"b4de97c3-1752-43a8-b1e5-766e4c6aa405","type":"LinearScale"},{"attributes":{},"id":"da3c9479-b652-4131-a999-acdfea8855af","type":"BasicTicker"},{"attributes":{"formatter":{"id":"b376d423-f3e8-44cc-8613-48da5acf8953","type":"BasicTickFormatter"},"plot":{"id":"6c875df9-4b66-45d5-948f-7eb565eda117","subtype":"Figure","type":"Plot"},"ticker":{"id":"da3c9479-b652-4131-a999-acdfea8855af","type":"BasicTicker"}},"id":"309462df-2036-4082-8057-56f2429b32fd","type":"LinearAxis"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"b9764c99-1c7f-4000-be20-6f301429e3d7","type":"Line"},{"attributes":{},"id":"ed036a2e-4998-4729-befc-204cd7c8508a","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"603bdf3d-ce76-4aa0-8608-a40dac557e2b","type":"ColumnDataSource"},"glyph":{"id":"6585a73a-e69e-4736-8a91-fb4b5bcac158","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"b9764c99-1c7f-4000-be20-6f301429e3d7","type":"Line"},"selection_glyph":null,"view":{"id":"501f6fac-8dae-4b9f-965a-7753c80c3a54","type":"CDSView"}},"id":"393abeaa-c5c0-43a6-9bdb-864191a042ff","type":"GlyphRenderer"},{"attributes":{},"id":"9bc1875f-1a27-4925-8c24-bc83e9f31ff8","type":"BasicTicker"},{"attributes":{"background_fill_alpha":{"value":0.5},"below":[{"id":"309462df-2036-4082-8057-56f2429b32fd","type":"LinearAxis"}],"border_fill_alpha":{"value":0.35},"left":[{"id":"c7e5376b-c4f4-435f-b999-b12e74381f13","type":"LinearAxis"}],"plot_height":500,"renderers":[{"id":"309462df-2036-4082-8057-56f2429b32fd","type":"LinearAxis"},{"id":"fae43d68-e98e-41de-9846-bf9189ddb3db","type":"Grid"},{"id":"c7e5376b-c4f4-435f-b999-b12e74381f13","type":"LinearAxis"},{"id":"4dd97e2d-bb00-4176-8d8c-66f1c3cc787d","type":"Grid"},{"id":"ca77f24c-7994-4ae3-8bfa-3242b30cb6a2","type":"Legend"},{"id":"393abeaa-c5c0-43a6-9bdb-864191a042ff","type":"GlyphRenderer"}],"title":{"id":"b2cc4202-0618-4aeb-9e32-7a1f90ebfef7","type":"Title"},"toolbar":{"id":"d73f9bfc-973f-4157-92ae-45fe493c62ca","type":"Toolbar"},"toolbar_location":"below","x_range":{"id":"dcca4f53-7e6a-49eb-bc46-afa0426cf7da","type":"DataRange1d"},"x_scale":{"id":"9ba70740-7bcb-4617-86eb-0bd22b00d5c3","type":"LinearScale"},"y_range":{"id":"27a8d5ce-04f0-49a4-8e38-de8fee7ec7e1","type":"DataRange1d"},"y_scale":{"id":"b4de97c3-1752-43a8-b1e5-766e4c6aa405","type":"LinearScale"}},"id":"6c875df9-4b66-45d5-948f-7eb565eda117","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":1,"plot":{"id":"6c875df9-4b66-45d5-948f-7eb565eda117","subtype":"Figure","type":"Plot"},"ticker":{"id":"9bc1875f-1a27-4925-8c24-bc83e9f31ff8","type":"BasicTicker"}},"id":"4dd97e2d-bb00-4176-8d8c-66f1c3cc787d","type":"Grid"},{"attributes":{"background_fill_alpha":{"value":0.5},"items":[{"id":"4ef5e913-61c2-4b9b-bf69-359b65710755","type":"LegendItem"}],"location":"top_left","plot":{"id":"6c875df9-4b66-45d5-948f-7eb565eda117","subtype":"Figure","type":"Plot"}},"id":"ca77f24c-7994-4ae3-8bfa-3242b30cb6a2","type":"Legend"},{"attributes":{},"id":"b2a00347-565d-4167-810d-ee8c06d6857f","type":"Selection"},{"attributes":{"callback":null,"data":{"x":[2011,2012,2013,2014,2015,2016,2017],"y":[790044,799442,811185,822272,834713,844952,854316]},"selected":{"id":"b2a00347-565d-4167-810d-ee8c06d6857f","type":"Selection"},"selection_policy":{"id":"ed036a2e-4998-4729-befc-204cd7c8508a","type":"UnionRenderers"}},"id":"603bdf3d-ce76-4aa0-8608-a40dac557e2b","type":"ColumnDataSource"},{"attributes":{"line_color":"orange","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"6585a73a-e69e-4736-8a91-fb4b5bcac158","type":"Line"},{"attributes":{"callback":null},"id":"27a8d5ce-04f0-49a4-8e38-de8fee7ec7e1","type":"DataRange1d"},{"attributes":{"label":{"value":"Inwonertal"},"renderers":[{"id":"393abeaa-c5c0-43a6-9bdb-864191a042ff","type":"GlyphRenderer"}]},"id":"4ef5e913-61c2-4b9b-bf69-359b65710755","type":"LegendItem"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"393abeaa-c5c0-43a6-9bdb-864191a042ff","type":"GlyphRenderer"}],"tooltips":[["Inwonertal","@y{int}"]]},"id":"d505c23f-b460-4608-81e2-aa859b3990a5","type":"HoverTool"},{"attributes":{"source":{"id":"603bdf3d-ce76-4aa0-8608-a40dac557e2b","type":"ColumnDataSource"}},"id":"501f6fac-8dae-4b9f-965a-7753c80c3a54","type":"CDSView"},{"attributes":{"axis_label":"Inwonertal","formatter":{"id":"f499b746-9029-4f2d-97ac-aa8bd9a2e505","type":"BasicTickFormatter"},"plot":{"id":"6c875df9-4b66-45d5-948f-7eb565eda117","subtype":"Figure","type":"Plot"},"ticker":{"id":"9bc1875f-1a27-4925-8c24-bc83e9f31ff8","type":"BasicTicker"}},"id":"c7e5376b-c4f4-435f-b999-b12e74381f13","type":"LinearAxis"},{"attributes":{},"id":"9ba70740-7bcb-4617-86eb-0bd22b00d5c3","type":"LinearScale"},{"attributes":{},"id":"f499b746-9029-4f2d-97ac-aa8bd9a2e505","type":"BasicTickFormatter"},{"attributes":{},"id":"b376d423-f3e8-44cc-8613-48da5acf8953","type":"BasicTickFormatter"}],"root_ids":["6c875df9-4b66-45d5-948f-7eb565eda117"]},"title":"Bokeh Application","version":"0.12.16"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('dff4f20f-d14f-4926-8c62-d080d175a141').textContent;
+                  var render_items = [{"docid":"c08a298c-1940-4656-a9b8-a78b285e1619","elementid":"83227740-7ecc-442a-b587-e7c7885b6efb","modelid":"6c875df9-4b66-45d5-948f-7eb565eda117"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+				</div>
+				<div class="crosses">
+					<div class="cross"></div>
+					<div class="cross"></div>
+					<div class="cross"></div>
+				</div>
+				<p> <br>Het gemiddelde jaarverbruik van elektriciteit en gas van Amsterdam sterk gedaald de afgelopen seven jaar.
+				Hoe kan dit? Is de bevolking van Amsterdam in deze periode kleiner geworden en is daardoor ook het verbruik gedaald?<br><br>
+				</p>
+				<div class="plot">
+				<div class="bk-root">
+            <div class="bk-plotdiv" id="4fbbacec-fc99-472a-b095-ae525a27bf5f"></div>
+        </div>
+        
+        <script type="application/json" id="ca54d552-35b7-4b0e-8e2e-fcd86e10cc23">
+          {"89313e85-978c-42df-8c48-af6e8a8306d8":{"roots":{"references":[{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"2c9de08d-1d01-46ff-b668-7cc483e4dba4","type":"GlyphRenderer"}],"tooltips":[["Stroomverbruik","@y{int}"]]},"id":"5360477c-b968-49af-8227-9f596f5c2d43","type":"HoverTool"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"c6b03fe9-46d3-47cf-bcde-a7bdaba3bdd0","type":"Line"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"5360477c-b968-49af-8227-9f596f5c2d43","type":"HoverTool"},{"id":"845c8722-839b-486d-81af-9cec907a6990","type":"HoverTool"},{"id":"54357c7e-272c-4a0f-a32f-a12df619fa6e","type":"HoverTool"}]},"id":"d09549c0-92fd-4b95-ac80-be5d18440d32","type":"Toolbar"},{"attributes":{"axis_label":"Elektriciteitsverbruik (SJV)","formatter":{"id":"74a1e2bb-3e70-4e1b-a5a9-f30e16b012d5","type":"BasicTickFormatter"},"plot":{"id":"774affa7-b93a-4ea0-bd64-2ede7479ec0a","subtype":"Figure","type":"Plot"},"ticker":{"id":"711b1e28-7d6c-4187-b217-5a37b95ac993","type":"BasicTicker"}},"id":"6e7d7012-f7f7-43bd-85af-6f760975a86a","type":"LinearAxis"},{"attributes":{},"id":"84ba5f96-eb16-4e05-8ddf-a7c15d0fe3f3","type":"BasicTickFormatter"},{"attributes":{"callback":null,"end":11.8,"start":9},"id":"93f5863b-6ca0-46e9-a5c4-c777c8469d3a","type":"Range1d"},{"attributes":{"plot":null,"text":"Gem. verbruik en Jaartemperatuur Amsterdam 2011-2017"},"id":"f041eaa8-c4bb-4ca5-afd0-7487e74c96aa","type":"Title"},{"attributes":{"callback":null,"end":1505,"start":1285},"id":"8779c614-3676-425d-8105-4b9f170d96dd","type":"Range1d"},{"attributes":{"data_source":{"id":"d4ffa220-c04f-4a81-90b8-3bee6431124c","type":"ColumnDataSource"},"glyph":{"id":"a345a39b-e6cc-432c-8812-04ae203f6b35","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"c6b03fe9-46d3-47cf-bcde-a7bdaba3bdd0","type":"Line"},"selection_glyph":null,"view":{"id":"3176cc92-3044-402e-abbf-646a0ba11b49","type":"CDSView"}},"id":"2c9de08d-1d01-46ff-b668-7cc483e4dba4","type":"GlyphRenderer"},{"attributes":{"label":{"value":"Temperatuur"},"renderers":[{"id":"407afeeb-f32a-43b5-864d-9583064e0d9a","type":"GlyphRenderer"}]},"id":"30ab28fe-de5f-4842-a3e4-a00f036c0c59","type":"LegendItem"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"37eb47a6-83b7-4929-9ee6-ca166ed974ce","type":"GlyphRenderer"}],"tooltips":[["Gasverbruik","@y2{int}"]]},"id":"845c8722-839b-486d-81af-9cec907a6990","type":"HoverTool"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"407afeeb-f32a-43b5-864d-9583064e0d9a","type":"GlyphRenderer"}],"tooltips":[["Jaartemperatuur","@y3"]]},"id":"54357c7e-272c-4a0f-a32f-a12df619fa6e","type":"HoverTool"},{"attributes":{"source":{"id":"d4ffa220-c04f-4a81-90b8-3bee6431124c","type":"ColumnDataSource"}},"id":"8c1de02a-cd53-4b02-9caa-3508bb32c786","type":"CDSView"},{"attributes":{"callback":null},"id":"bcb153e7-3925-47cb-a991-67626b02db01","type":"DataRange1d"},{"attributes":{"dimension":1,"plot":{"id":"774affa7-b93a-4ea0-bd64-2ede7479ec0a","subtype":"Figure","type":"Plot"},"ticker":{"id":"711b1e28-7d6c-4187-b217-5a37b95ac993","type":"BasicTicker"}},"id":"769a4570-e77a-4e8e-874e-789d3b773a4f","type":"Grid"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y2"}},"id":"ef755b8f-261f-4c56-80d4-256e9ca5e59e","type":"Line"},{"attributes":{"source":{"id":"d4ffa220-c04f-4a81-90b8-3bee6431124c","type":"ColumnDataSource"}},"id":"3050c35a-fd50-4622-8ad9-516ece0e3975","type":"CDSView"},{"attributes":{"background_fill_alpha":{"value":0.5},"below":[{"id":"08fcf073-873a-429e-a29e-7198717841e6","type":"LinearAxis"}],"border_fill_alpha":{"value":0.35},"extra_y_ranges":{"bar":{"id":"93f5863b-6ca0-46e9-a5c4-c777c8469d3a","type":"Range1d"},"foo":{"id":"8779c614-3676-425d-8105-4b9f170d96dd","type":"Range1d"}},"left":[{"id":"6e7d7012-f7f7-43bd-85af-6f760975a86a","type":"LinearAxis"},{"id":"e0dadac8-a3e7-4164-bf1c-c3b18e7eb63f","type":"LinearAxis"}],"plot_height":500,"renderers":[{"id":"08fcf073-873a-429e-a29e-7198717841e6","type":"LinearAxis"},{"id":"6c86ad8b-599b-4563-a971-6983f782695a","type":"Grid"},{"id":"6e7d7012-f7f7-43bd-85af-6f760975a86a","type":"LinearAxis"},{"id":"769a4570-e77a-4e8e-874e-789d3b773a4f","type":"Grid"},{"id":"12190331-6140-4fe0-83c2-d1aa8d42d36f","type":"Legend"},{"id":"2c9de08d-1d01-46ff-b668-7cc483e4dba4","type":"GlyphRenderer"},{"id":"37eb47a6-83b7-4929-9ee6-ca166ed974ce","type":"GlyphRenderer"},{"id":"407afeeb-f32a-43b5-864d-9583064e0d9a","type":"GlyphRenderer"},{"id":"e0dadac8-a3e7-4164-bf1c-c3b18e7eb63f","type":"LinearAxis"},{"id":"d29a2e05-ceae-4411-8da4-89bbaf4fcc04","type":"LinearAxis"}],"right":[{"id":"d29a2e05-ceae-4411-8da4-89bbaf4fcc04","type":"LinearAxis"}],"title":{"id":"f041eaa8-c4bb-4ca5-afd0-7487e74c96aa","type":"Title"},"toolbar":{"id":"d09549c0-92fd-4b95-ac80-be5d18440d32","type":"Toolbar"},"toolbar_location":"below","x_range":{"id":"bcb153e7-3925-47cb-a991-67626b02db01","type":"DataRange1d"},"x_scale":{"id":"eee8aa6d-b7cf-44c7-946d-cd4bce0bfc3a","type":"LinearScale"},"y_range":{"id":"96260126-23b5-46c8-87fc-a26720a684a0","type":"Range1d"},"y_scale":{"id":"198b2dd9-f6f6-49f0-9e72-de011385f456","type":"LinearScale"}},"id":"774affa7-b93a-4ea0-bd64-2ede7479ec0a","subtype":"Figure","type":"Plot"},{"attributes":{"background_fill_alpha":{"value":0.5},"items":[{"id":"97784f02-1beb-4ad8-9233-3e62bfab020c","type":"LegendItem"},{"id":"db488161-fc0f-4fe8-95d2-097f28d32c69","type":"LegendItem"},{"id":"30ab28fe-de5f-4842-a3e4-a00f036c0c59","type":"LegendItem"}],"location":"bottom_left","plot":{"id":"774affa7-b93a-4ea0-bd64-2ede7479ec0a","subtype":"Figure","type":"Plot"}},"id":"12190331-6140-4fe0-83c2-d1aa8d42d36f","type":"Legend"},{"attributes":{"callback":null,"end":2650,"start":2440},"id":"96260126-23b5-46c8-87fc-a26720a684a0","type":"Range1d"},{"attributes":{},"id":"415e86bf-84e6-4b64-a4df-0b0a44b74e73","type":"UnionRenderers"},{"attributes":{},"id":"bdb74ed1-456d-4369-af9e-fbf779cdfc14","type":"BasicTickFormatter"},{"attributes":{"callback":null,"data":{"x":[2011,2012,2013,2014,2015,2016,2017],"y":[2620.7403023824068,2626.973642233194,2632.0771908581805,2613.300775311645,2539.8194738433626,2511.9447887323945,2471.044430361921],"y2":[1476.0704334967702,1442.7477687233218,1412.9544575891132,1405.992756415196,1357.8721995534684,1327.6443328968428,1314.4832820219087],"y3":[10.9,10.3,9.8,11.7,10.9,10.7,11.0]},"selected":{"id":"22341ec0-bfe7-466b-95d3-090aa6c83357","type":"Selection"},"selection_policy":{"id":"415e86bf-84e6-4b64-a4df-0b0a44b74e73","type":"UnionRenderers"}},"id":"d4ffa220-c04f-4a81-90b8-3bee6431124c","type":"ColumnDataSource"},{"attributes":{"line_color":"red","line_width":3,"x":{"field":"x"},"y":{"field":"y3"}},"id":"316764fc-9ca2-4b1e-a6d9-6a26f25e1288","type":"Line"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y3"}},"id":"1f8532f9-bba9-464a-b5b3-207cc18f7501","type":"Line"},{"attributes":{},"id":"daedc702-f533-494f-a60e-a12246aaebd1","type":"BasicTicker"},{"attributes":{"axis_label":"Gasverbruik(SJV)","formatter":{"id":"7a9e48c6-e10e-4615-8ab5-026fb6ea1441","type":"BasicTickFormatter"},"plot":{"id":"774affa7-b93a-4ea0-bd64-2ede7479ec0a","subtype":"Figure","type":"Plot"},"ticker":{"id":"71d69ea2-d0aa-48f3-acd4-9cc851af8f48","type":"BasicTicker"},"y_range_name":"foo"},"id":"e0dadac8-a3e7-4164-bf1c-c3b18e7eb63f","type":"LinearAxis"},{"attributes":{"label":{"value":"Gasverbruik"},"renderers":[{"id":"37eb47a6-83b7-4929-9ee6-ca166ed974ce","type":"GlyphRenderer"}]},"id":"db488161-fc0f-4fe8-95d2-097f28d32c69","type":"LegendItem"},{"attributes":{"line_color":"blue","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"a345a39b-e6cc-432c-8812-04ae203f6b35","type":"Line"},{"attributes":{"source":{"id":"d4ffa220-c04f-4a81-90b8-3bee6431124c","type":"ColumnDataSource"}},"id":"3176cc92-3044-402e-abbf-646a0ba11b49","type":"CDSView"},{"attributes":{},"id":"22341ec0-bfe7-466b-95d3-090aa6c83357","type":"Selection"},{"attributes":{},"id":"eee8aa6d-b7cf-44c7-946d-cd4bce0bfc3a","type":"LinearScale"},{"attributes":{},"id":"7a9e48c6-e10e-4615-8ab5-026fb6ea1441","type":"BasicTickFormatter"},{"attributes":{},"id":"74a1e2bb-3e70-4e1b-a5a9-f30e16b012d5","type":"BasicTickFormatter"},{"attributes":{"label":{"value":"Elektriciteitverbruik"},"renderers":[{"id":"2c9de08d-1d01-46ff-b668-7cc483e4dba4","type":"GlyphRenderer"}]},"id":"97784f02-1beb-4ad8-9233-3e62bfab020c","type":"LegendItem"},{"attributes":{"axis_label":"Gem. Jaartemperatuur (Graden celsius)","formatter":{"id":"84ba5f96-eb16-4e05-8ddf-a7c15d0fe3f3","type":"BasicTickFormatter"},"plot":{"id":"774affa7-b93a-4ea0-bd64-2ede7479ec0a","subtype":"Figure","type":"Plot"},"ticker":{"id":"daedc702-f533-494f-a60e-a12246aaebd1","type":"BasicTicker"},"y_range_name":"bar"},"id":"d29a2e05-ceae-4411-8da4-89bbaf4fcc04","type":"LinearAxis"},{"attributes":{},"id":"198b2dd9-f6f6-49f0-9e72-de011385f456","type":"LinearScale"},{"attributes":{},"id":"71d69ea2-d0aa-48f3-acd4-9cc851af8f48","type":"BasicTicker"},{"attributes":{"formatter":{"id":"bdb74ed1-456d-4369-af9e-fbf779cdfc14","type":"BasicTickFormatter"},"plot":{"id":"774affa7-b93a-4ea0-bd64-2ede7479ec0a","subtype":"Figure","type":"Plot"},"ticker":{"id":"2d25167e-85cb-44d2-b78a-82c2a5a39d6a","type":"BasicTicker"}},"id":"08fcf073-873a-429e-a29e-7198717841e6","type":"LinearAxis"},{"attributes":{"plot":{"id":"774affa7-b93a-4ea0-bd64-2ede7479ec0a","subtype":"Figure","type":"Plot"},"ticker":{"id":"2d25167e-85cb-44d2-b78a-82c2a5a39d6a","type":"BasicTicker"}},"id":"6c86ad8b-599b-4563-a971-6983f782695a","type":"Grid"},{"attributes":{"data_source":{"id":"d4ffa220-c04f-4a81-90b8-3bee6431124c","type":"ColumnDataSource"},"glyph":{"id":"92296ec1-e4dc-4aa2-bfe6-84c7e9aebf15","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"ef755b8f-261f-4c56-80d4-256e9ca5e59e","type":"Line"},"selection_glyph":null,"view":{"id":"3050c35a-fd50-4622-8ad9-516ece0e3975","type":"CDSView"},"y_range_name":"foo"},"id":"37eb47a6-83b7-4929-9ee6-ca166ed974ce","type":"GlyphRenderer"},{"attributes":{},"id":"711b1e28-7d6c-4187-b217-5a37b95ac993","type":"BasicTicker"},{"attributes":{},"id":"2d25167e-85cb-44d2-b78a-82c2a5a39d6a","type":"BasicTicker"},{"attributes":{"data_source":{"id":"d4ffa220-c04f-4a81-90b8-3bee6431124c","type":"ColumnDataSource"},"glyph":{"id":"316764fc-9ca2-4b1e-a6d9-6a26f25e1288","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1f8532f9-bba9-464a-b5b3-207cc18f7501","type":"Line"},"selection_glyph":null,"view":{"id":"8c1de02a-cd53-4b02-9caa-3508bb32c786","type":"CDSView"},"y_range_name":"bar"},"id":"407afeeb-f32a-43b5-864d-9583064e0d9a","type":"GlyphRenderer"},{"attributes":{"line_color":"olive","line_width":3,"x":{"field":"x"},"y":{"field":"y2"}},"id":"92296ec1-e4dc-4aa2-bfe6-84c7e9aebf15","type":"Line"}],"root_ids":["774affa7-b93a-4ea0-bd64-2ede7479ec0a"]},"title":"Bokeh Application","version":"0.12.16"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('ca54d552-35b7-4b0e-8e2e-fcd86e10cc23').textContent;
+                  var render_items = [{"docid":"89313e85-978c-42df-8c48-af6e8a8306d8","elementid":"4fbbacec-fc99-472a-b095-ae525a27bf5f","modelid":"774affa7-b93a-4ea0-bd64-2ede7479ec0a"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+				</div>
+				<div class="crosses">
+					<div class="cross"></div>
+					<div class="cross"></div>
+					<div class="cross"></div>
+				</div>
+				<p> <br>Het gemiddelde jaarverbruik van elektriciteit en gas van Amsterdam sterk gedaald de afgelopen seven jaar.
+				Hoe kan dit? Is de bevolking van Amsterdam in deze periode kleiner geworden en is daardoor ook het verbruik gedaald?<br><br>
+				</p>
+				
+				
+				
+			</div>
+			<div class="column" style="background-color:#ea0000;height:2000px;">
+				<h2>Interessante Amsterdamse energieverbruiks feitjes</h2>
+				<p>Beetsche leeg, maar dat komt nog wel goed skatje</p>
+			</div>
+		</div>
   </body>
 </html>
