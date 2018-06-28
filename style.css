@@ -1,3 +1,15 @@
+
+header {
+	height: 200px;
+}
+
+#titel {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: xx-large;
+	text-align: center;
+	margin: 5px;
+}
+
 #desc{
 	float: right;
 	margin-right: 5%;
@@ -127,4 +139,11 @@
 	margin-right: 15px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+#crossHead {
+	background-color: #d60a0a;
+	display: inline-block;
+	height: 25px;
+	width: 2%;
 }
