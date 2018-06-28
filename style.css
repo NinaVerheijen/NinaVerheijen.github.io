@@ -1,18 +1,45 @@
 #desc{
-	display: inline-block;
-	width: 500px;
 	float: right;
-	padding-right: 200px;
+	margin-right: 5%;
+	width: 300px;
+	margin-top: 6%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+}
+
+#tekstbox {
+	background-color: #d60a0a;
+	display: inline-block;
+	width: 350px;
+	height: 150px;
+	float: right;
+	margin-right: 7%;
+	margin-top: 10%;
+}
+
+#slidertext {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#jaar {
+	text-align: center;
+	width: 650px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 * {
 	box-sizing: border-box;
 }
 
+.kaartdiv {
+	margin: 3%;
+}
+
+
 /*---------slider-----------------*/
 
 .slidecontainer {
-    width: 100%; /* Width of the outside container */
+  width: 100%; /* Width of the outside container */
 }
 
 /* The slider itself */
