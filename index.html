@@ -38,12 +38,16 @@
       onmouseover="writeText('Zuidoost')">
     </map>
 
+    <div id="tekstbox">
+      <p id="desc"> Ga over de kaart om informatie over de verschilldende gebieden te zien.</p>
+    </div>
 
-    <p id="desc"> Ga over de kaart om informatie over de verschilldende gebieden te zien.</p>
+    <p id="slidertext"> Gebruik de slider om de verschillen tussen de jaren te zien. </p>
 
     <div class="slidecontainer">
-      <input type="range" min="2011" max="2017" value="2011"  class="slider" id="myRange">
-      <p> Jaar: <span id="Year"></span></p>
+      <input type="range" min="2011" max="2017" value="2011" class="slider" id="myRange">
+
+      <p id="jaar"> Jaar: <span id="Year"></span></p>
     </div>
 
     <script>
@@ -57,7 +61,7 @@
     }
     </script>
 
-    <p> Gebruik de slider om de verschillen tussen de jaren te zien. </p>
+
 	</div>
 
 <!-- Twee kolommen -->
